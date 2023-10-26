@@ -37,10 +37,10 @@ public class RutaController {
     public ResponseEntity<GetRutaDto> findById(@PathVariable Long id){
 
         if (rutaRepo.existsById(id)){
-            return ResponseEntity.notFound().build();
+           return ResponseEntity.of(rutaRepo.findById(id)
+                    .map(GetRutaDto::of));
         }
-        return ResponseEntity.of(rutaRepo.findById(id)
-                .map(GetRutaDto::of));
+        return ResponseEntity.notFound().build();
 
     }
 
@@ -51,5 +51,7 @@ public class RutaController {
         return ResponseEntity.status(HttpStatus.CREATED).body(GetRutaDto.of(ruta));
 
     }
+
+
 
 }
