@@ -14,24 +14,25 @@ private final CursoRepo cursoRepo;
 
     @PostConstruct
     public void init(){
-        // Primero, crea y guarda el curso
+
         Curso curso = Curso.builder()
                 .id(1L)
                 .nombreCurso("base de datos")
                 .build();
         cursoRepo.save(curso);
 
-        // Luego, crea y guarda los alumnos
+
         Alumno alumno = Alumno.builder()
                 .id(1L)
                 .nombre("angel")
                 .edad(20)
                 .build();
+        alumno.addToCurso(curso);
         alumnorepo.save(alumno);
 
         Alumno alumno1 = Alumno.builder()
                 .id(2L)
-                .nombre("angel")
+                .nombre("angel2")
                 .edad(20)
                 .build();
         alumnorepo.save(alumno1);

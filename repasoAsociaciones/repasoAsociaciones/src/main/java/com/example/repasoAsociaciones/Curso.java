@@ -1,8 +1,8 @@
 package com.example.repasoAsociaciones;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 import java.util.List;
 
@@ -10,10 +10,15 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
+@Setter
 @Data
 public class Curso {
+    @Id
+    @GeneratedValue
     private Long id;
     private String nombreCurso;
+
 
     @OneToMany(mappedBy = "curso")
     List<Alumno> alumnos;

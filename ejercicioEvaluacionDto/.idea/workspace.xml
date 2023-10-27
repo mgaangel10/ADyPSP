@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d43834ab-1af4-4c73-b59e-a8be07d1db8f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../DocumentacionApiRest/DocumentacionApiRest/src/main/java/com/example/DocumentacionApiRest/config/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejemplodtoyRecord/src/main/java/com/example/ejemplodtoyRecord/Repo/CategoriaRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repasoAsociaciones/repasoAsociaciones/src/main/java/com/example/repasoAsociaciones/Curso.java" beforeDir="false" afterPath="$PROJECT_DIR$/../repasoAsociaciones/repasoAsociaciones/src/main/java/com/example/repasoAsociaciones/Curso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repasoAsociaciones/repasoAsociaciones/src/main/java/com/example/repasoAsociaciones/InitData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../repasoAsociaciones/repasoAsociaciones/src/main/java/com/example/repasoAsociaciones/InitData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repasoAsociaciones/repasoAsociaciones/src/main/java/com/example/repasoAsociaciones/RepasoAsociacionesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../repasoAsociaciones/repasoAsociaciones/src/main/java/com/example/repasoAsociaciones/RepasoAsociacionesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repasoAsociaciones/repasoAsociaciones/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../repasoAsociaciones/repasoAsociaciones/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2WbjWOcgvPcvMDgvArXnCj3SnkU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d43834ab-1af4-4c73-b59e-a8be07d1db8f" name="Changes" comment="" />
+      <created>1697008206567</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697008206567</updated>
+    </task>
+    <servers />
+  </component>
+</project>

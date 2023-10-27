@@ -19,4 +19,14 @@ public class Alumno {
     private int edad;
     @ManyToOne
     Curso curso;
+
+    public void addToCurso(Curso curso){
+        this.curso= curso;
+        curso.getAlumnos().add(this);
+    }
+
+    public  void removeToCurso(Curso curso){
+        this.curso=null;
+        curso.getAlumnos().remove(this);
+    }
 }

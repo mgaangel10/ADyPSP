@@ -1,15 +1,13 @@
-package com.example.repasoAsociaciones;
+package com.example.ejemplodtoyRecord;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class
-
-RepasoAsociacionesApplication {
+public class EjemplodtoyRecordApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RepasoAsociacionesApplication.class, args);
+		SpringApplication.run(EjemplodtoyRecordApplication.class, args);
 	}
 
 }
