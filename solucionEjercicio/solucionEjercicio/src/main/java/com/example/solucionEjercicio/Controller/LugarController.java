@@ -1,12 +1,19 @@
 package com.example.solucionEjercicio.Controller;
 
+import com.example.solucionEjercicio.DTO.LugarDto;
 import com.example.solucionEjercicio.Modal.Lugar;
 import com.example.solucionEjercicio.Repo.LugraRepo;
+import com.example.solucionEjercicio.service.Lugarservice;
+import error.RutaNotFoundException;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.net.URI;
 import java.util.List;
 
 @RestController
@@ -15,6 +22,7 @@ import java.util.List;
 public class LugarController {
 
     private final LugraRepo lugar;
+    private final Lugarservice lugarService;
 
     @GetMapping("/")
     public ResponseEntity<List<Lugar>>todos(){
@@ -25,13 +33,18 @@ public class LugarController {
         return ResponseEntity.ok(result);
     }
     @GetMapping("/{id}")
-    public ResponseEntity<Lugar> findById(@PathVariable Long id){
-        return ResponseEntity.of(lugar.findById(id));
+    public LugarDto findById(@PathVariable Long id){
+        return lugarService.findByIdddd(id);
     }
 
     @PostMapping("/")
-    public ResponseEntity<Lugar> create(@RequestBody Lugar l){
-        return ResponseEntity.status(HttpStatus.CREATED).body(lugar.save(l));
+    public ResponseEntity<Lugar> create(@Valid @RequestBody Lugar l){
+        Lugar lugar1 = lugarService.create(l);
+        URI createUri= ServletUriComponentsBuilder
+                .fromCurrentRequest()
+                .path("/{id}")
+                .buildAndExpand(lugar1.getId()).toUri();
+        return ResponseEntity.created(createUri).body(lugar1);
     }
     @PutMapping("/{íd}")
     public ResponseEntity<Lugar> edit(@PathVariable Long id,@RequestBody Lugar l){
