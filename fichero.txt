@@ -1,0 +1,22 @@
+B:7,D:6,T:1,1:1,2:1,3:1,4:1,5:1
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+M                                     M
+M   A                         MMMMMMMMM
+M    AAAAAA                           M
+M    AA   AA                          M
+M                                     M
+M                                     M
+M   A                         AAAAAAAAM
+M   A              AAAAAAAAAAAAAAAAAAAM
+M   A                                 M
+M   A                                 M
+M   A             MMMMMMMMMMMMMMMMMMMMM
+M                 M    D              M
+M                 M     MMMMMMMMMMMMMMM
+M                 M                   M
+M                 M                   M
+M                                     M
+M                                     M
+M                AAAAAAAAAAAAAAAAAA   M
+M                       AAAAAAAAA     M
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
